@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<title>WILMO</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+  addEventListener('load',envw,false);
+
+  function envw()
+  {
+    document.getElementById('botonenviar').addEventListener('click',presion1,false);
+  }
+
+  function presion1()
+  {
+    location.href="../pages/index.html";
+  }
+</script>
+
+</head>
+<br><br>
+
+<body>
+
+<div class="container" align="left">
+  <h2>Registro</h2>
+  <form>
+    <div class="form-group">
+      <label for="email">Usuario:</label>
+      <input type="email" class="form-control" id="email" placeholder="Ingrese su e-mail">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Contraseña:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Ingrese su contraseña">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Recordarme</label>
+    </div>
+  </form>
+</div>
+
+<div style="padding-left:130px;background-color:#ffffff;" id="botonenviar">
+    <button  type="submit" class="btn btn-default">Enviar</button>
+</div>
+
+<footer class="navbar-fixed-bottom">
+    <div class="container-fluid">
+        <div class="text-center" align="center">
+            <img src="../images/cortsem.jpg" width="200" class="img-rounded">
+            <p> Copyright  &copy;2017 WILMO - All Rights Reserved. <br> Designed by HWedOIT </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
